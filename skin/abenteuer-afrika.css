@@ -78,3 +78,30 @@ a.scrollup{
 .carousel-caption p {
     background: none;
 }
+
+.carousel-inner .form-inline .form-group button[type="livedemo"] {
+    padding: 20px 60px;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
+    padding: 20px 60px;
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.carousel-inner .form-inline .form-group button[type="getnow"]:hover {
+    padding: 20px 60px;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+}
