@@ -83,16 +83,17 @@ a.scrollup{
     text-transform: uppercase;
 }
 
-.carousel-inner .form-inline .form-group button[type="livedemo"] {
-    padding: 20px 60px;
-    font-size: 20px;
+.carousel-inner .form-inline .form-group .livedemo {
     background: #000;
-    color: #fff;
+    border-color: #fff;
     border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 60px;
     text-transform: uppercase;
 }
 
-.carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
+.carousel-inner .form-inline .form-group .livedemo:hover {
     padding: 20px 60px;
     font-size: 20px;
     background: #fff;
@@ -101,7 +102,17 @@ a.scrollup{
     text-transform: uppercase;
 }
 
-.carousel-inner .form-inline .form-group button[type="getnow"]:hover {
+
+.carousel-inner .form-inline .form-group .getnow {
+    background: #fff;
+    border-radius: 0;
+    color: #000;
+    font-size: 20px;
+    padding: 20px 60px;
+    text-transform: uppercase;
+}
+
+.carousel-inner .form-inline .form-group .getnow:hover {
     padding: 20px 60px;
     font-size: 20px;
     background: #000;
