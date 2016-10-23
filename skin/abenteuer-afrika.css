@@ -112,3 +112,27 @@ a.scrollup{
     background-size: cover;
     background-position: 50% 130%;
 }
+
+/**
+.team-member .profile-picture .profile-overlay {
+    height: 94%;
+    width: 94%;
+    background-color: #fff;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: border;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    display: block;
+}
+*/
