@@ -105,3 +105,10 @@ a.scrollup{
     border-radius: 0;
     text-transform: uppercase;
 }
+
+#testimonials-3 {
+    background-image: url(../img/parallax/chameleon.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 130%;
+}
