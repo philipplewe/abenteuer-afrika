@@ -136,3 +136,7 @@ a.scrollup{
     display: block;
 }
 */
+
+.carousel-caption h2 {
+    text-transform: uppercase;
+}
