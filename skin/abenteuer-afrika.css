@@ -12,15 +12,16 @@ a:hover {
 */
 
 /* menu */
-.nav>li>a:hover {
-	color: #54ee23;
+
+.nav>li>a:hover, nav>li>a:focus {
+	color: #428bca;
 }
 
 .navbar .navbar-nav > .active > a {
-	color: #54ee23;
+	color: #428bca;
 }
 .navbar .navbar-brand:hover {
-	color: #54ee23;
+	color: #428bca;
 }
 
 /* flexslider */
