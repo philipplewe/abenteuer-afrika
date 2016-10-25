@@ -2,12 +2,14 @@
 #1 = 417630
 #2 = 417630
 */
+/**
 a {
 	color: #417630;
 }
 a:hover {
 	color: #417630;
 }
+*/
 
 /* menu */
 .nav>li>a:hover {
