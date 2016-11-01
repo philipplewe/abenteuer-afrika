@@ -142,37 +142,12 @@ a.scrollup{
     color: #428bca;
 }
 
-/**
-.team-member .profile-picture .profile-overlay {
-    height: 94%;
-    width: 94%;
-    background-color: #fff;
-    position: absolute;
-    top: 3%;
-    left: 3%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: border;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-    opacity: 0.3;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    display: block;
-}
-*/
-
 .team-member .team-bio {
      right: 40px;
      background-color: #eee;
 }
 
 .team-member:hover {
-    /** background-color: #555; */
     background-color: rgba(255,255,255,0.5)
 }
 
@@ -188,7 +163,7 @@ a.scrollup{
     background-color: #242424;
     background-image: url("../img/parallax/africa-map.svg");
     height: 500px;
-    background-position: 70% 0%;
+    background-position: 80% 0%;
     /*background-size: 100%;*/
     /*background-position: 0% -100%;*/
     background-size: 50%;
@@ -201,10 +176,10 @@ a.scrollup{
 }
 
 #parallax1 .container h2 span {
-    background: rgba(105,105,105,0.2);
+    background: rgba(105,105,105,0.5);
 }
 
 #parallax1 .container p span {
-    background: rgba(105,105,105,0.2);
+    background: rgba(105,105,105,0.5);
 }
 
