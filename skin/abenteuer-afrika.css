@@ -82,6 +82,13 @@ a.scrollup{
     background: none;
 }
 
+.carousel-caption .date {
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
 .carousel-caption h2 {
     text-transform: uppercase;
 }
