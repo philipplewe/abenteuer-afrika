@@ -71,11 +71,11 @@ a:hover {
 
 /* footer */
 .social-circle li a {
-	background:#417630;
+	background: #417630;
 }
 
 a.scrollup{
-	background:#417630;
+	background: #428bca;
 }
 
 .carousel-caption p {
@@ -131,6 +131,10 @@ a.scrollup{
     background-position: 50% 130%;
 }
 
+.company h4 span {
+    color: #428bca;
+}
+
 /**
 .team-member .profile-picture .profile-overlay {
     height: 94%;
@@ -157,11 +161,19 @@ a.scrollup{
 
 .team-member .team-bio {
      right: 40px;
+     background-color: #eee;
 }
 
 .team-member:hover {
     /** background-color: #555; */
     background-color: rgba(255,255,255,0.5)
+}
+
+.team-member span {
+    color: #428bca;
+    font-family: "Titillium Web",sans-serif;
+    font-size: 0.875em;
+    text-transform: uppercase;
 }
 
 #parallax1 {
