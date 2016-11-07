@@ -142,9 +142,20 @@ a.scrollup{
     color: #428bca;
 }
 
+.team-member .team-bio p {
+}
+
+.team-member:hover .team-bio p {
+}
+
+.team-member:hover .team-bio {
+}
+
 .team-member .team-bio {
      right: 40px;
      background-color: #eee;
+/*     overflow: scroll;
+     height: 100px;*/
 }
 
 .team-member:hover {
