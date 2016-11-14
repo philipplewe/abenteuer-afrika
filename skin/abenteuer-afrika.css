@@ -201,10 +201,10 @@ a.scrollup{
     background-color: #242424;
     background-image: url("../img/parallax/africa-map.svg");
     height: 500px;
-    background-position: 80% 0%;
+    background-position: 80% -100%;
     /*background-size: 100%;*/
     /*background-position: 0% -100%;*/
-    background-size: 50%;
+    background-size: 30%;
     background-repeat: no-repeat;
     /*
     background-position: center bottom;
