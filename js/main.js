@@ -128,18 +128,33 @@
     //Google Map
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
+    var get_placeid = $('#google-map').data('placeid');
 
     function initialize_google_map() {
         var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
         var mapOptions = {
-            zoom: 14,
+            zoom: 15,
             scrollwheel: false,
             center: myLatlng
         };
         var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map
+        
+        var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails({
+            placeId: get_placeid
+        }, function(place, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(place.name);
+                infowindow.open(map, this);
+            });
+            }
         });
     }
     google.maps.event.addDomListener(window, 'load', initialize_google_map);
