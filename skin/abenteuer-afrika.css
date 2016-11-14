@@ -158,6 +158,7 @@ a.scrollup{
 
 .team-member {
     margin: 0;
+    height: 100%;
 }
 
 .team-member .team-bio p {
@@ -176,7 +177,8 @@ a.scrollup{
      background-color: #eee;
      opacity: 1;
      position: static;
-/*     overflow: scroll;
+/*
+     overflow: scroll;
      height: 100px;*/
 }
 

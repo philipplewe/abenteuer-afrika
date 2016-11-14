@@ -16,6 +16,7 @@
 	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
         jQuery('.register-localscroll').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
 	
+        $('.team-bio').matchHeight();
 	
 	// portfolio
     if($('.isotopeWrapper').length){
