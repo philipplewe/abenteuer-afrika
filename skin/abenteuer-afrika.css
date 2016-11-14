@@ -33,6 +33,11 @@ a:hover {
 	background-color:#417630;
 }
 
+.testimonial span.author {
+    font-family: Georgia,sans-serif;
+    font-size: 16px;
+}
+
 .testimonial span.author a {
 	color: #417630;
 }
