@@ -142,7 +142,26 @@ a.scrollup{
     color: #428bca;
 }
 
+/*
+.mar-bot400 {
+	margin-bottom: 400px;
+}
+*/
+
+/*.team-section {
+    min-width: 100%;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}*/
+
+.team-member {
+    margin: 0;
+}
+
 .team-member .team-bio p {
+        opacity: 1;
 }
 
 .team-member:hover .team-bio p {
@@ -152,10 +171,17 @@ a.scrollup{
 }
 
 .team-member .team-bio {
-     right: 40px;
+     right: 0px;
+     left: 0px;
      background-color: #eee;
+     opacity: 1;
+     position: static;
 /*     overflow: scroll;
      height: 100px;*/
+}
+
+.team-detail h4 {
+    margin-top: 20px;
 }
 
 .team-member:hover {
