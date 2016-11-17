@@ -705,6 +705,8 @@ button[type="submit"].light:hover {
 
 /*--Responsive--*/
 
+/** commented out because it destroys the layout **/
+/*
 @media (max-width: 1199px){
 .navbar .navbar-collapse {
 	margin-bottom: 0;
@@ -720,6 +722,8 @@ button[type="submit"].light:hover {
 height: auto;
 }
 }
+*/
+
 
 .nav li {
 	height: 100%;
