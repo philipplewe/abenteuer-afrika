@@ -128,12 +128,18 @@
     //Google Map
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
-    var get_placeid = $('#google-map').data('placeid');
+    //var get_placeid = $('#google-map').data('placeid');
+     
+var get_placeid =
+[
+    {"placeId":"ChIJiSOO22I0cEER89ajhjCESNg", "date":"26.11.2016", "time":"18 Uhr" },
+    {"placeId":"ChIJt_3Yx3fhvkcRza0WHlkmGR0", "date":"TT.MM.JJJJ", },
+]
 
     function initialize_google_map() {
         var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
         var mapOptions = {
-            zoom: 15,
+            zoom: 8,
             scrollwheel: false,
             center: myLatlng
         };
@@ -142,20 +148,24 @@
         var infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
 
-        service.getDetails({
-            placeId: get_placeid
-        }, function(place, status) {
-            if (status === google.maps.places.PlacesServiceStatus.OK) {
-            var marker = new google.maps.Marker({
-                map: map,
-                position: place.geometry.location
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.setContent(place.name);
-                infowindow.open(map, this);
-            });
+        get_placeid.forEach(
+            function(currentValue) {
+                    service.getDetails({
+                        placeId: currentValue.placeId
+                    }, function(place, status) {
+                        if (status === google.maps.places.PlacesServiceStatus.OK) {
+                        var marker = new google.maps.Marker({
+                            map: map,
+                            position: place.geometry.location
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.setContent('<div><strong>' + currentValue.date + (currentValue.time != undefined ? ' - ' + currentValue.time : '') + '</strong><br>' + place.name + '<br>' + place.formatted_address);
+                            infowindow.open(map, this);
+                        });
+                        }
+                    });
             }
-        });
+        );
     }
     google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
