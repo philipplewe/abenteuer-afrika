@@ -133,7 +133,9 @@
 var get_placeid =
 [
     {"placeId":"ChIJiSOO22I0cEER89ajhjCESNg", "date":"26.11.2016", "time":"18 Uhr" },
-    {"placeId":"ChIJt_3Yx3fhvkcRza0WHlkmGR0", "date":"TT.MM.JJJJ", },
+    {"placeId":"ChIJtQJVfI_jvkcRSvvXei0pAE8", "date":"30.01.2017"},
+    {"placeId":"ChIJTycBaWAfv0cRfM7P6YUuzz8", "date":"03.03.2017"},
+    {"placeId":"ChIJt_3Yx3fhvkcRza0WHlkmGR0", "date":"02.04.2017", "time":"17 Uhr"}
 ]
 
     function initialize_google_map() {
